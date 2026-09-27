@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+}
+
+.weather-container {
+    width: 380px;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #357abd;
+}
+
+#cityName {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 45px;
+    font-weight: bold;
+    color: #4a90e2;
+    margin: 10px 0;
+}
+
+#description {
+    font-size: 18px;
+    color: #555;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    color: #555;
+}
+
+#error {
+    color: red;
+    margin-top: 15px;
+}
+#weatherIcon {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+#weatherResult {
+    padding: 10px;
+}
+
+#cityName {
+    font-size: 28px;
+}
+
+#temperature {
+    font-size: 55px;
+}
+
+.details p {
+    font-size: 14px;
+}
+
+@media (max-width: 450px) {
+    .weather-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+}
+#dateTime {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.temperature-details {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    padding: 12px;
+    background: #f3f7fc;
+    border-radius: 10px;
+}
+
+.temperature-details p {
+    font-size: 13px;
+    color: #555;
+}
